@@ -8,3 +8,9 @@
  */
 
 rootProject.name = 'CSAAT'
+//application
+include('root-project')
+include('sub-project-1')
+
+// testing
+
