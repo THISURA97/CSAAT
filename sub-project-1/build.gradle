@@ -29,7 +29,11 @@ dependencies {
 
     // This dependency is used by the application.
     implementation 'com.google.guava:guava:29.0-jre'
+     compile 'org.slf4j:slf4j-api:1.7.13'
+    testCompile 'junit:junit:4.12'
 }
+apply plugin: 'java'
+apply plugin: 'application'
 
 application {
     // Define the main class for the application.

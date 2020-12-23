@@ -36,7 +36,6 @@ dependencies {
 }
 
 apply plugin: 'java'
-apply plugin: 'jacoco'
 apply plugin: 'application'
 
 mainClassName = 'com.CSAAT.greet.Program'
