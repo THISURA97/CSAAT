@@ -2,7 +2,7 @@ package CSAAT;
 
 public class App {
     public String getGreeting() {
-        return "Hello World in sub project 1!";
+        return "Greetings from  sub project 1!";
     }
 
     public static void main(String[] args) {

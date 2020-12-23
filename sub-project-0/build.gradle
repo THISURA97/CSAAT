@@ -29,12 +29,26 @@ dependencies {
 
     // This dependency is used by the application.
     implementation 'com.google.guava:guava:29.0-jre'
+
+    compile 'org.slf4j:slf4j-api:1.7.13'
+
+    testCompile 'junit:junit:4.12'
 }
 
-application {
-    // Define the main class for the application.
-    mainClass = 'CSAAT.App'
+apply plugin: 'java'
+apply plugin: 'jacoco'
+apply plugin: 'application'
+
+mainClassName = 'com.CSAAT.greet.Program'
+
+jar {
+    manifest {
+        attributes 'Main-Class' : 'com.CSAAT.greet.Program'
+    }
+    baseName = 'greet-program'
+    version = '0.1.0'
 }
+
 task('sp-task-0').doLast {
     println "sub-project-task from $project.name"
 }
