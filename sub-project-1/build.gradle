@@ -35,3 +35,7 @@ application {
     // Define the main class for the application.
     mainClass = 'CSAAT.App'
 }
+task('sp-task-1').doLast {
+    println "sub-project-task from $project.name"
+}
+println "This is executed during the $project.name configuration phase."

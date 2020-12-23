@@ -1,0 +1,6 @@
+allprojects {
+    task('root-task').doLast {
+        println "I'm $project.name"
+    }
+     println "This is executed during the $project.name configuration phase."
+}

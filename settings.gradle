@@ -14,3 +14,4 @@ include('sub-project-1')
 
 // testing
 
+println 'This is executed during the initialization phase.'
