@@ -11,5 +11,3 @@ spotbugsMain {
         }
     }
 }
-spotbugsTest.enabled = false
-spotbugsIntegrationTest.enabled = false
