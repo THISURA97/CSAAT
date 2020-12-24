@@ -35,6 +35,14 @@ dependencies {
 apply plugin: 'java'
 apply plugin: 'application'
 
+jar {
+    manifest {
+        attributes 'Main-Class' : 'CSAAT.App'
+    }
+    baseName = 'App'
+    version = '0.1.0'
+}
+
 application {
     // Define the main class for the application.
     mainClass = 'CSAAT.App'
