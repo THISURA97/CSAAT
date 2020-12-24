@@ -6,10 +6,10 @@ subprojects {
       toolVersion = '8.4'
   }
 
-  apply plugin: 'findbugs'
-  findbugs {
-      ignoreFailures = true
-  }
+ // apply plugin: 'findbugs'
+ // findbugs {
+  //    ignoreFailures = true
+ // }
 
-  apply plugin: 'pmd'
-}
+  //apply plugin: 'pmd'
+//}
