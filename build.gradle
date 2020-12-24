@@ -7,17 +7,21 @@ plugins {
     id "com.github.spotbugs" version "4.6.0"
     id 'de.aaschmid.cpd' version '3.1'
     id "org.sonarqube" version "3.0"
-
 }
 
 subprojects {
   apply from: file("$rootProject.projectDir/gradle/heroku/stage.gradle")
-
+  apply plugin: 'org.sonarqube'
 }
-allprojects {
 
+allprojects {
+ ext.baseVersion = "0.1"
+  ext.snapshotVersion = true
+  group = "org.sonarqube"
+  version = "$baseVersion" + (snapshotVersion ? "-SNAPSHOT" : "")
   }
-    task('root-task').doLast {
+
+task('root-task').doLast {
         println "I'm $project.name"
     }
      println "This is executed during the $project.name configuration phase."
@@ -27,6 +31,7 @@ sourceCompatibility = '11'
 
 repositories {
     mavenCentral()
+    jcenter()
 }
 
 dependencies {
@@ -84,9 +89,14 @@ sonarqube {
         property "sonar.organization", "thisura97"
         property "sonar.host.url", "https://sonarcloud.io"
         property "sonar.sourceEncoding", "UTF-8"
-        property "sonar.sources", "src/main/java"
-        property "sonar.tests", "src/test/java"
+
         property "sonar.java.coveragePlugin", "jacoco"
-        property "sonar.coverage.jacoco.xmlReportPaths", "./build/reports/jacocoTestReport.xml"
+        property "sonar.coverage.jacoco.xmlReportPaths", "./build/reports/jacocoReport.xml"
+        property "sonar.junit.reportsPath", "app/build/test-results/*/TEST-*.xml"
+
+        sonar.modules = sub-project-0,sub-project-1
+        sub-project-o.sonar.ProjectName=sub-project-0
+        sub-project-o.sonar.ProjectName=sub-project-0
+        sub-project-1.sonar.ProjectName=sub-project-1
     }
 }
