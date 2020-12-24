@@ -12,7 +12,6 @@ buildscript {
 }
 
 apply from: file('gradle/check.gradle')
-apply from: file('gradle/heroku/clean.gradle')
 
 subprojects {
   apply plugin: 'com.github.johnrengelman.shadow'
