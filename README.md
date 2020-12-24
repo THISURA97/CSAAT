@@ -1,5 +1,6 @@
 # CSAAT
 
+![Java CI with Gradle](https://github.com/THISURA97/CSAAT/workflows/Java%20CI%20with%20Gradle/badge.svg)
 [![Bugs](https://sonarcloud.io/api/project_badges/measure?project=THISURA97_CSAAT&metric=bugs)](https://sonarcloud.io/dashboard?id=THISURA97_CSAAT)
 [![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=THISURA97_CSAAT&metric=code_smells)](https://sonarcloud.io/dashboard?id=THISURA97_CSAAT)
 [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=THISURA97_CSAAT&metric=sqale_rating)](https://sonarcloud.io/dashboard?id=THISURA97_CSAAT)
