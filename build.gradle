@@ -25,4 +25,5 @@ allprojects {
     }
      println "This is executed during the $project.name configuration phase."
 }
-
+task stage(dependsOn: ['build', 'clean'])
+build.mustRunAfter clean
