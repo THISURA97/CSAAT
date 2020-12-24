@@ -69,4 +69,4 @@ integrationTest.dependsOn test
 jacocoTestCoverageVerification.dependsOn jacocoTestReport
 check.dependsOn(cpdCheck, pmdMain, jacocoTestCoverageVerification, integrationTest)
 
-}
+
