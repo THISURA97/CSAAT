@@ -10,10 +10,6 @@
 
 <xsl:key name="files" match="file" use="@name" />
 
-<!-- Checkstyle XML Style Sheet by Stephane Bailliez <sbailliez@apache.org>         -->
-<!-- Part of the Checkstyle distribution found at http://checkstyle.sourceforge.net -->
-<!-- Usage (generates checkstyle_report.html):                                      -->
-
 
 <xsl:template match="checkstyle">
 	<html>
