@@ -1,0 +1,15 @@
+spotbugs {
+    toolVersion = '4.1.1'
+}
+
+spotbugsMain {
+    reports {
+        html {
+            enabled = true
+            destination = file("$buildDir/reports/spotbugs/main/spotbugs.html")
+            stylesheet = 'fancy-hist.xsl'
+        }
+    }
+}
+spotbugsTest.enabled = false
+spotbugsIntegrationTest.enabled = false
