@@ -26,7 +26,7 @@
         <exclude name="SimpleDateFormatNeedsLocale"/>
         <exclude name="UseLocaleWithCaseConversions"/>
     </rule>
-    <!--    <rule ref="category/java/quickstart.xml"/>-->
+    
     <rule ref="category/java/performance.xml"/>
     <rule ref="category/java/security.xml"/>
 

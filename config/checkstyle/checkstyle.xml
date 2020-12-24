@@ -21,10 +21,7 @@
         <property name="eachLine" value="true"/>
     </module>
 
-    <!--    <module name="SuppressionFilter">-->
-    <!--        <property name="file" value="config/checkstyle/suppressions.xml"/>-->
-    <!--    </module>-->
-
+    
     <module name="LineLength">
         <property name="max" value="120"/>
         <property name="ignorePattern" value="^package.*|^import.*|a href|href|http://|https://|ftp://"/>
@@ -183,15 +180,7 @@
         </module>
         <module name="OverloadMethodsDeclarationOrder"/>
         <module name="VariableDeclarationUsageDistance"/>
-<!--        <module name="CustomImportOrder">-->
-<!--            <property name="customImportOrderRules"-->
-<!--                      value="THIRD_PARTY_PACKAGE###SPECIAL_IMPORTS###STANDARD_JAVA_PACKAGE###STATIC"/>-->
-<!--            <property name="specialImportsRegExp" value="^javax\."/>-->
-<!--            <property name="standardPackageRegExp" value="^java\."/>-->
-<!--            <property name="thirdPartyPackageRegExp" value=".*"/>-->
-<!--            <property name="sortImportsInGroupAlphabetically" value="true"/>-->
-<!--            <property name="separateLineBetweenGroups" value="true"/>-->
-<!--        </module>-->
+
         <module name="MethodParamPad"/>
         <module name="ParenPad"/>
         <module name="AnnotationLocation">
