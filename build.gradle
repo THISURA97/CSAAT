@@ -3,11 +3,14 @@ plugins {
     id "org.sonarqube" version "2.7.1"
 }
 
+apply plugin: 'idea'
 apply plugin: 'java'
 apply plugin: 'jacoco'
 
 repositories {
     jcenter()
+    mavenLocal()
+    mavenCentral() // maven { url: 'http://jcenter.bintray.com' }
 }
 
 dependencies {
@@ -25,5 +28,10 @@ allprojects {
     }
      println "This is executed during the $project.name configuration phase."
 }
-task stage(dependsOn: ['build', 'clean'])
-build.mustRunAfter clean
+subprojects {
+  // ...
+  apply from: file("$rootProject.projectDir/gradle/heroku/stage.gradle")
+}
+
+apply from: file('gradle/check.gradle')
+apply from: file('gradle/heroku/clean.gradle')
