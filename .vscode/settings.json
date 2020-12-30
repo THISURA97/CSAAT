@@ -1,3 +1,5 @@
 {
-    "java.configuration.updateBuildConfiguration": "automatic"
+    "java.configuration.updateBuildConfiguration": "automatic",
+    "python.pythonPath": "C:\\Python39\\python.exe",
+    "git.ignoreLimitWarning": true
 }
