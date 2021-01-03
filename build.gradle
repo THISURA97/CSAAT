@@ -81,7 +81,7 @@ apply from: 'gradle/spotbugs.gradle'
 integrationTest.dependsOn test
 jacocoTestCoverageVerification.dependsOn jacocoTestReport
 check.dependsOn(cpdCheck, pmdMain, jacocoTestCoverageVerification, integrationTest)
-finalizedBy jacocoTestReport
+
 
 sonarqube {
     properties {
