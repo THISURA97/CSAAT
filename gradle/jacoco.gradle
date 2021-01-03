@@ -2,13 +2,14 @@ jacoco {
     toolVersion = "0.8.5"
     reportsDir = file("$buildDir/jacoco")
 }
-
+additionalSourceDirs = files(sourceSets.main.allJava.srcDirs)
 jacocoTestReport {
     reports {
-        xml.enabled true
+        xml.enabled false
         csv.enabled false
-        html.destination file("${buildDir}/jacocoTestReport.html")
+        html.destination file("${buildDir}/reports/jacoco/html")
     }
+     executionData = files('build/jacoco/test.exec')
     afterEvaluate {
         classDirectories.setFrom(files(classDirectories.files.collect {
             fileTree(dir: it, exclude: ['com/qualitychecks/service/**'])
