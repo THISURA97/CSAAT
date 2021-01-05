@@ -1,8 +1,0 @@
-plugins {
-    id "com.pswidersk.python-plugin" version "1.2.2"
-}
-
-pythonPlugin {
-    pythonVersion = "3.8.2"
-}
-
