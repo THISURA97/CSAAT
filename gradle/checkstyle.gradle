@@ -10,7 +10,7 @@ checkstyleTest {
     source ='src/test/java'
 
 }
-
+//dsfdff
 tasks.withType(Checkstyle) {
     reports {
         xml.enabled false
